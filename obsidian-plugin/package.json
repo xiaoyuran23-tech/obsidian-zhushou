@@ -1,0 +1,21 @@
+{
+  "name": "obsidian-zhushou",
+  "version": "0.1.0",
+  "description": "Obsidian plugin for collaborative note-taking",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "esbuild src/main.ts --bundle --external:obsidian --outfile=main.js --watch",
+    "build": "esbuild src/main.ts --bundle --external:obsidian --outfile=main.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "obsidian": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/jest": "latest",
+    "esbuild": "latest",
+    "jest": "latest",
+    "typescript": "latest"
+  }
+}
